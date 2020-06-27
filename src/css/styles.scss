@@ -32,6 +32,22 @@ body{
         }
     }
 }
+
+/* Title common*/
+.white-title,
+.black-title{
+    font-family: $myriadBold;
+    margin-bottom: 40px;
+    letter-spacing: 3.36px;
+}
+.white-title{
+    color: $white;
+}
+.black-title{
+    color: $c242424;
+}
+
+/* banner component Css*/
 .web-banner{
     background-image: url('/assets/banner-bg.png');
     background-color: #f2f2f2;
@@ -106,16 +122,18 @@ body{
         width: 11%;
     }    
 }
+
+/* Calculater component Css*/
 .calc-main{
     background-image: url('/assets/related.svg');
     background-color: #f2f2f2;
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
     z-index: 99;
-    @extend .p-absolute;
-    left: 0;
-    right: 0;
+    position: relative;
+    // @extend .p-absolute;
+    // left: 0;
+    // right: 0;
     padding: 40px;
     .calc-bg-box{
         background-image: url('/assets/calc.svg');
@@ -123,12 +141,7 @@ body{
         background-size: auto;
         background-repeat: no-repeat;
     }
-    h2{
-        color: $c242424;
-        font-family: $myriadBold;
-        margin-bottom: 40px;
-        letter-spacing: 3.36px;
-    }
+  
     .calc-inner{
         padding-top: 10px;
         .text-label{
@@ -195,6 +208,11 @@ body{
                 font-size: 90px;
                 line-height: 10px;
                 font-family: 'digitaldisplaytfb';
+                padding:7.5px;
+                cursor: pointer;
+            }
+            #total{
+                cursor: none;
             }
         }
     }
@@ -235,4 +253,92 @@ body{
         top: 22%;
         width: 11%;
     }    
+    .poll-right {
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+        height: 50%;
+        overflow: hidden;
+    }
+    .poll-left {
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+        height: 50%;
+        overflow: hidden;
+    }
+}
+
+/* related component Css*/
+.related-main{
+    background-image: url('/assets/related.svg');
+    background-color: #f2f2f2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+    figure{
+        img{
+            margin-bottom: 30px;
+        }
+        
+        figcaption{
+            color: #484848;
+            line-height: 32px;
+            font-family: $myriadBold;
+        }
+    }
+}
+
+/* Article component Css*/
+.article-main{
+    background-image: url('/assets/article.svg');
+    background-color: #f2f2f2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+}
+
+/*Footer*/
+footer{
+    background-image: url('/assets/footer.png');
+    background-color: #f2f2f2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 72px 0 56px;
+    font-family: $myriadRegular;
+    font-weight: 100;
+    .footer-social-icons {
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 25px;
+        a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            vertical-align: middle;
+            &:hover,&:focus,&:active{
+                color:#fff;
+            }
+        
+        }
+        .s-icon{
+            color: #fff;
+            height:41px;
+            width: 41px;
+            margin-left: 15px;
+            background-image: url("/assets/social.png");
+            &.icon-fb{
+                background-position: 0 0
+            }
+            &.icon-twitter{
+                background-position: 0 -161px;
+            }
+            &.icon-linkedin{
+                background-position: 0 -322px
+            }
+            &.icon-utube{
+                background-position: 0 -486px
+            }
+        }
+    }
 }
