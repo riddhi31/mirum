@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Regular'), url('fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Myriad Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Bold'), url('fonts/MYRIADPRO-BOLD.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'digitaldisplaytfb';
+  font-style: normal;
+  font-weight: normal;
+  src: local('digitaldisplaytfb'), url('fonts/digital_display_tfb.ttf') format('ttf');
+}
+
+$myriadBold : 'Myriad Pro Bold';
+$myriadRegular : 'Myriad Pro Regular';
+  
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+  
+@mixin font-size-classes {
+  $i : 10;
+  @while($i <= 100) {
+    .text-#{$i} {
+      font-size:#{$i}px;
+    }
+    .texti-#{$i} {
+      font-size:#{$i}px !important;
+    }
+    $i: $i+1;
+  }
+}
+$breakpoints: (
+  // Extra small screen / phone
+  xs: 320,
+  // Small Landscape / phone
+  sl: 480px,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1600px,
+  //above 1900 and 1900 device
+  xxl: 1900px
+);
+@mixin breakpoint-up($point) {
+	$grid-point: map-get($breakpoints,$point);
+	@media screen and (min-width: $grid-point) {
+		@content;
+	}
+}
+$c242424 : #242424;
+$white : #ffffff;
+.clear 
+{ 
+  clear:both; 
+}  
+.p-absolute{
+  position: absolute;
+}
+.p-relative{
+  position: relative;
+}
