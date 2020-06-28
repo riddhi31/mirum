@@ -9,7 +9,7 @@ body{
     font-size: 14px;
     height: auto;
     width: 100%;
-    position: relative;
+    @extend .p-relative;
 }
 @include font-size-classes;
 .navbar{
@@ -49,9 +49,9 @@ body{
 /* banner component Css*/
 .web-banner{
     background-image: url('/assets/banner-bg.png');
-    background-color: #f2f2f2;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: $offwhite;
+    @extend .bg-cover;
+    @extend .bg-no-repeat;
     height: 100vh;
     padding: 40px;
     .portrait-img{
@@ -125,17 +125,17 @@ body{
 /* Calculater component Css*/
 .calc-main{
     background-image: url('/assets/related.svg');
-    background-color: #f2f2f2;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: $offwhite;
+    @extend .bg-cover;
+    @extend .bg-no-repeat;
     z-index: 99;
-    position: relative;
+    @extend .p-relative;
     padding: 40px;
     .calc-bg-box{
         background-image: url('/assets/calc.svg');
         background-color: #1d1d1d;
         background-size: auto;
-        background-repeat: no-repeat;
+        @extend .bg-no-repeat;
         margin-bottom: 40px;
         border-radius: 9px;
     }
@@ -220,8 +220,8 @@ body{
         padding: 20px 0px 10px;
         button{
             background-image: url('/assets/yellow.png');
-            background-size: cover;
-            background-repeat: no-repeat;
+            @extend .bg-cover;
+            @extend .bg-no-repeat;
             box-shadow: none;
             border: none;
             text-transform: uppercase;
@@ -252,28 +252,28 @@ body{
         width: 11%;
     }    
     .poll-right {
-        position: absolute;
+        @extend .p-absolute;
         bottom: 0;
         right: 5%;
         height: 50%;
         overflow: hidden;
     }
     .poll-left {
-        position: absolute;
+        @extend .p-absolute;
         bottom: 0;
         left: 5%;
         height: 50%;
         overflow: hidden;
     }
     .pipe-right {
-        position: absolute;
+        @extend .p-absolute;
         bottom: 0;
         right: 40%;
         overflow: hidden;
         height: 80px;
     }
     .pipe-left {
-        position: absolute;
+        @extend .p-absolute;
         bottom: 0;
         left: 40%;
         overflow: hidden;
@@ -284,17 +284,16 @@ body{
 /* related component Css*/
 .related-main{
     background-image: url('/assets/related.svg');
-    background-color: #f2f2f2;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: $offwhite;
+    @extend .bg-cover;
+    @extend .bg-no-repeat;
     padding: 40px;
     figure{
         img{
             margin-bottom: 30px;
         }
-        
         figcaption{
-            color: #484848;
+            color: $c484848;
             line-height: 32px;
             font-family: $myriadBold;
         }
@@ -305,9 +304,9 @@ body{
 /* Article component Css*/
 .article-main{
     background-image: url('/assets/article.svg');
-    background-color: #f2f2f2;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: $offwhite;
+    @extend .bg-cover;
+    @extend .bg-no-repeat;
     padding: 40px;
     .short-text{
         font-size: 20px;
@@ -331,7 +330,7 @@ body{
         }
     }
     .read-txt{
-        text-transform: uppercase;
+        @extend .text-uppercase;
         font-family: $myriadBold;
         letter-spacing: 0.5px;
     }
@@ -340,9 +339,9 @@ body{
 /*Footer*/
 footer{
     background-image: url('/assets/footer.png');
-    background-color: #f2f2f2;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: $offwhite;
+    @extend .bg-cover;
+    @extend .bg-no-repeat;
     padding: 72px 0 56px;
     font-family: $myriadRegular;
     font-weight: 100;
@@ -384,7 +383,7 @@ footer{
 .slick-dots li button:before{
     font-size: 30px!important;
     line-height: 20px;
-    position: absolute;
+    @extend .p-absolute;
     top: 0;
     left: 0;
     width: 40px!important;

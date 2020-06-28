@@ -66,6 +66,8 @@ $breakpoints: (
 }
 $c242424 : #242424;
 $white : #ffffff;
+$c484848 : #484848;
+$offwhite :#f2f2f2;
 .clear 
 { 
   clear:both; 
@@ -81,4 +83,10 @@ $white : #ffffff;
 }
 .text-uppercase{
   text-transform: uppercase;
+}
+.bg-cover{
+  background-size: cover;
+}
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
