@@ -1,8 +1,6 @@
 @import "utilities.scss";
 @import '../../node_modules/react-modal-video/scss/modal-video.scss';
-html{
 
-}
 body{
     margin: 0;
     padding: 0;
@@ -11,6 +9,7 @@ body{
     font-size: 14px;
     height: auto;
     width: 100%;
+    position: relative;
 }
 @include font-size-classes;
 .navbar{
@@ -57,8 +56,8 @@ body{
     padding: 40px;
     .portrait-img{
         width: 24%;
-        top: 14%;
-        right: 270px;
+        top: 80px;
+        right: 350px;
         @extend .p-absolute;
         z-index: 9;
         overflow: hidden;
@@ -102,7 +101,7 @@ body{
     .thum-box{
         @extend .p-absolute;
         top: 4rem;
-        width: 80%;
+        width: 100%;
         .youtube-thumb{
             opacity: 0.5;
             width: 100%;
@@ -112,13 +111,13 @@ body{
     .cloud-left {
         @extend .p-absolute;
         width: 8%;
-        top: 10%;
+        top: 80px;
         left: 10%;
     }
     .cloud-right {
         @extend .p-absolute;
-        right: 10%;
-        top: 22%;
+        right: 100px;
+        top: 140px;
         width: 11%;
     }    
 }
@@ -131,15 +130,14 @@ body{
     background-repeat: no-repeat;
     z-index: 99;
     position: relative;
-    // @extend .p-absolute;
-    // left: 0;
-    // right: 0;
     padding: 40px;
     .calc-bg-box{
         background-image: url('/assets/calc.svg');
-        background-color: #f2f2f2;
+        background-color: #1d1d1d;
         background-size: auto;
         background-repeat: no-repeat;
+        margin-bottom: 40px;
+        border-radius: 9px;
     }
   
     .calc-inner{
@@ -267,6 +265,20 @@ body{
         height: 50%;
         overflow: hidden;
     }
+    .pipe-right {
+        position: absolute;
+        bottom: 0;
+        right: 40%;
+        overflow: hidden;
+        height: 80px;
+    }
+    .pipe-left {
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+        overflow: hidden;
+        height: 80px;
+    }
 }
 
 /* related component Css*/
@@ -287,6 +299,7 @@ body{
             font-family: $myriadBold;
         }
     }
+    
 }
 
 /* Article component Css*/
@@ -296,6 +309,32 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     padding: 40px;
+    .short-text{
+        font-size: 20px;
+    }
+    .article-content {
+        overflow: auto;
+        line-height: 1.5;
+        font-family: $myriadRegular;
+        font-size: 20px;
+        height: 500px;
+        max-height: 500px;
+    }
+    .article-slider-main{
+        &:focus,
+        &:active,
+        &:hover{
+            outline: none;
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+        }
+    }
+    .read-txt{
+        text-transform: uppercase;
+        font-family: $myriadBold;
+        letter-spacing: 0.5px;
+    }
 }
 
 /*Footer*/

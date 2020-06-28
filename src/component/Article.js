@@ -1,9 +1,25 @@
 import React, { Component } from 'react'
-import ReadMoreReact from 'read-more-react';
+import data from '../api/related';
+import StringParse2 from './StringParse2';
+import Slider from "react-slick";
 
+const articleData = data['content'];
+const settings = {
+    dots: true,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    adaptiveHeight: true
+};
 export class Article extends Component {
+    constructor(){
+        super();
+    }
+   
     render() {
-        return (
+         return (
             <div>
                 <section className="article-main">
                     <div className="container-fluid">
@@ -16,21 +32,34 @@ export class Article extends Component {
                                         </h2>
                                     </div>
                                 </div>
-                                <div className="row no-gutters">
-                                    <div className="col-lg-5 col-md-6 col-12">
-                                        <figure>
-                                            <img src="img-fluid" src={process.env.PUBLIC_URL + `/assets/article-thumb.png`} alt="related"/>
-                                        </figure>
-                                    </div>
-                                    <div className="col-lg-7 col-md-6 col-12">
-                                        <div className="ml-4">
-                                            <h2 className="text-25 white">What is Lorem Ipsum?</h2>
-                                            <ReadMoreReact text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-                                                min="80" ideal="100" max="200"
-                                                readMoreText="Read More"/>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Slider {...settings}>
+                                    
+                                    {articleData.map((result) => {
+                                            
+                                        const image = result['poster-image'];
+                                        const charCount = result.description.length ;
+                                        return(
+                                            <div className="article-slider-main" >
+                                                <div className="row no-gutters" key={result.id}>
+                                                    <div className="col-lg-5 col-md-6 col-12">
+                                                        <figure>
+                                                            <img src="img-fluid" src={process.env.PUBLIC_URL + `/assets/${image}`} alt="related"/>
+                                                        </figure>
+                                                    </div>
+                                                    <div className="col-lg-7 col-md-6 col-12">
+                                                        <div className="mx-4 d-block">
+                                                            <h2 className="text-25 white">What is Lorem Ipsum?</h2>
+                                                            <div className="article-content">
+                                                                <StringParse2 content={result.description} contentLength={1200} />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            )
+                                        })
+                                    }
+                                </Slider>
                             </div>
                         </div>
                     </div>

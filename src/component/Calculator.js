@@ -11,11 +11,8 @@ export class Calculator extends Component {
         };
         this.handleChange = this.handleChange.bind(this);
         this.interestCal = this.interestCal.bind(this);
-        //this.minTwoDigits = this.minTwoDigits.bind(this);
     }
-    // minTwoDigits(n) {
-    //     return n > 9 ? "" + n: "0" + n;
-    // }
+  
     handleChange(e){
         const re = /^[0-9\b]+$/;
         let target = e.target;
@@ -34,6 +31,7 @@ export class Calculator extends Component {
             total : equation
         })
     }
+    
     render() {
         return (
             <div>
@@ -50,7 +48,7 @@ export class Calculator extends Component {
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="offset-lg-2 col-lg-8">
+                                    <div className="offset-lg-1 col-lg-10 col-md-13 col-12">
                                         <div className="calc-bg-box">
                                             <div className="calc-inner">
                                                 <div className="row no-gutters">
@@ -90,12 +88,12 @@ export class Calculator extends Component {
                                                         <button type="button" onClick={this.interestCal}>Calculate</button>
                                                     </div>
                                                     <div className="col-12">
-                                                        <div className="mb-2 d-flex align-items-center">  
+                                                        <div className="mb-4 d-flex align-items-center">  
                                                             <label className="text-22 text-label">
                                                                 Total
                                                             </label>
                                                             <div className="fancy-input">
-                                                                <input type="text" id="total" name="total" value={this.state.total} readonly disabled/>
+                                                                <input type="text" id="total" name="total" value={this.state.total} readOnly disabled/>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -112,12 +110,19 @@ export class Calculator extends Component {
                         <div className="cloud-right">
                             <img src={process.env.PUBLIC_URL + `/assets/cloud.png`} className="img-fluid small-right"></img>
                         </div>
+                        <div className="pipe-left">
+                            <img src={process.env.PUBLIC_URL + `/assets/cal-stick.png`} className="img-fluid cal-pipe-left"></img>
+                        </div>
+                        <div className="pipe-right">
+                            <img src={process.env.PUBLIC_URL + `/assets/cal-stick.png`} className="img-fluid cal-pipe-right"></img>
+                        </div>
                         <div className="poll-left">
                             <img src={process.env.PUBLIC_URL + `/assets/cal-left-poll.png`} className="img-fluid cal-poll-left"></img>
                         </div>
                         <div className="poll-right">
                             <img src={process.env.PUBLIC_URL + `/assets/cal-right-poll.png`} className="img-fluid cal-poll-right"></img>
                         </div>
+         
                     </div>
                 </section>
             </div>
