@@ -35,12 +35,10 @@ export class Article extends Component {
                                 <Slider {...settings}>
                                     
                                     {articleData.map((result) => {
-                                            
                                         const image = result['poster-image'];
-                                        const charCount = result.description.length ;
                                         return(
-                                            <div className="article-slider-main" >
-                                                <div className="row no-gutters" key={result.id}>
+                                            <div className="article-slider-main" key={result.id}>
+                                                <div className="row no-gutters">
                                                     <div className="col-lg-5 col-md-6 col-12">
                                                         <figure>
                                                             <img src="img-fluid" src={process.env.PUBLIC_URL + `/assets/${image}`} alt="related"/>
