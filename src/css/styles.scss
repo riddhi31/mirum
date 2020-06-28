@@ -381,3 +381,23 @@ footer{
         }
     }
 }
+.slick-dots li button:before{
+    font-size: 30px!important;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px!important;
+    height: 40px!important;
+    content: '■' !important;
+    opacity: 1; 
+    color: #fff;
+}
+.slick-dots li,.slick-dots li button{
+    width: 40px!important;
+    height: 40px!important;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: orangered !important;
+}
