@@ -46,7 +46,7 @@ export class Article extends Component {
                                                     </div>
                                                     <div className="col-lg-7 col-md-6 col-12">
                                                         <div className="mx-4 d-block">
-                                                            <h2 className="text-25 white">What is Lorem Ipsum?</h2>
+                                                            <h2 className="text-25 mb-3 white-title">What is Lorem Ipsum?</h2>
                                                             <div className="article-content">
                                                                 <StringParse2 content={result.description} contentLength={1200} />
                                                             </div>
