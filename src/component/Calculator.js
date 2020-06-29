@@ -48,7 +48,7 @@ export class Calculator extends Component {
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="offset-lg-1 col-lg-10 offset-md-1 col-md-10 col-12">
+                                    <div className="offset-lg-2 col-lg-8 offset-md-1 col-md-10 col-12">
                                         <div className="calc-bg-box">
                                             <div className="calc-inner">
                                                 <div className="row no-gutters">

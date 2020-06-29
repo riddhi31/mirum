@@ -41,7 +41,7 @@ export class Article extends Component {
                                                 <div className="row no-gutters">
                                                     <div className="col-lg-5 col-md-6 col-12">
                                                         <figure>
-                                                            <img src="img-fluid" src={process.env.PUBLIC_URL + `/assets/${image}`} alt="related"/>
+                                                            <img className="img-fluid" src={process.env.PUBLIC_URL + `/assets/${image}`} alt="related"/>
                                                         </figure>
                                                     </div>
                                                     <div className="col-lg-7 col-md-6 col-12">

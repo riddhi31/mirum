@@ -31,7 +31,7 @@ export class Banner extends Component {
                             <img className="img-fluid" src={process.env.PUBLIC_URL + `/assets/character.png`} alt="MS Dhoni" />
                         </div>
                         <div className="row">
-                            <div className="offset-xl-3 col-xl-3 offset-lg-4 col-lg-3 offset-md-4 col-md-3">
+                            <div className="offset-xl-4 col-xl-3 offset-lg-4 col-lg-3 offset-md-4 col-md-3">
                                 <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='3f_FkgXzC1U' onClose={() => this.setState({isOpen: false})} />
                                 <div className="thum-box" onClick={this.openModal} >
                                     <img className="img-fluid icon-youtube" src={process.env.PUBLIC_URL + `/assets/play-button.png`} alt="" />
