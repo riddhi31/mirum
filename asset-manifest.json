@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/mrium/static/css/main.71615a78.chunk.css",
+    "main.js": "/mrium/static/js/main.8fcadba1.chunk.js",
+    "main.js.map": "/mrium/static/js/main.8fcadba1.chunk.js.map",
+    "runtime-main.js": "/mrium/static/js/runtime-main.a4b3bcdb.js",
+    "runtime-main.js.map": "/mrium/static/js/runtime-main.a4b3bcdb.js.map",
+    "static/css/2.8c9deabb.chunk.css": "/mrium/static/css/2.8c9deabb.chunk.css",
+    "static/js/2.02d22793.chunk.js": "/mrium/static/js/2.02d22793.chunk.js",
+    "static/js/2.02d22793.chunk.js.map": "/mrium/static/js/2.02d22793.chunk.js.map",
+    "index.html": "/mrium/index.html",
+    "precache-manifest.9490a2f094459da88e89a6d1e994317f.js": "/mrium/precache-manifest.9490a2f094459da88e89a6d1e994317f.js",
+    "service-worker.js": "/mrium/service-worker.js",
+    "static/css/2.8c9deabb.chunk.css.map": "/mrium/static/css/2.8c9deabb.chunk.css.map",
+    "static/css/main.71615a78.chunk.css.map": "/mrium/static/css/main.71615a78.chunk.css.map",
+    "static/js/2.02d22793.chunk.js.LICENSE.txt": "/mrium/static/js/2.02d22793.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/mrium/static/media/digital_display_tfb-webfont.b7ef013c.woff2",
+    "static/media/slick-theme.css": "/mrium/static/media/slick.f97e3bbf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a4b3bcdb.js",
+    "static/css/2.8c9deabb.chunk.css",
+    "static/js/2.02d22793.chunk.js",
+    "static/css/main.71615a78.chunk.css",
+    "static/js/main.8fcadba1.chunk.js"
+  ]
+}
