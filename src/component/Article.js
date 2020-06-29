@@ -38,7 +38,7 @@ export class Article extends Component {
                                         const image = result['poster-image'];
                                         return(
                                             <div className="article-slider-main" key={result.id}>
-                                                <div className="row no-gutters">
+                                                <div className="row no-gutters align-items-center">
                                                     <div className="col-lg-5 col-md-6 col-12">
                                                         <figure>
                                                             <img className="img-fluid" src={process.env.PUBLIC_URL + `/assets/${image}`} alt="related"/>
