@@ -48,7 +48,7 @@ body{
 
 /* banner component Css*/
 .web-banner{
-    background-image: url('/assets/banner-bg.png');
+    background-image: url('https://i.imgur.com/enJNZUh.jpg');
     background-color: $offwhite;
     @extend .bg-cover;
     @extend .bg-no-repeat;
@@ -64,6 +64,7 @@ body{
     }
     .web-text{
         margin-top: 10%;
+        display: inline-block;
        
         @include breakpoint-up('lg') {
             margin-top: 10vh;
@@ -121,10 +122,47 @@ body{
         width: 11%;
     }    
 }
+@keyframes typewriter {
+    0%, 100% {
+      width: 0;
+    }
+    20%, 80% {
+      width: 10.2em;
+    }
+  }
+  
+  @keyframes caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  .title-track {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter;
+    display: inline-block;
+    position: relative;
+    animation-duration: 10s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+  }
+  
+  
+  .title-track::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  }
 
 /* Calculater component Css*/
 .calc-main{
-    background-image: url('/assets/related.svg');
+    background-image: url('https://svgshare.com/i/MSx.svg');
     background-color: $offwhite;
     @extend .bg-cover;
     @extend .bg-no-repeat;
@@ -132,9 +170,9 @@ body{
     @extend .p-relative;
     padding: 40px;
     .calc-bg-box{
-        background-image: url('/assets/calc.svg');
+        background-image: url('https://svgshare.com/i/MSc.svg');
         background-color: #1d1d1d;
-        background-size: auto;
+        background-size: cover;
         @extend .bg-no-repeat;
         margin-bottom: 40px;
         border-radius: 9px;
@@ -176,14 +214,14 @@ body{
             padding: 10px 7px 10px 11px;
             width: calc(100% - 196px);
             display: inline-block;
-            height: 111px;
+            height: 134px;
             border-left: 2px solid #1d1d1d;
         }
         .fancy-input-auto{
             padding: 10px 7px 10px 11px;
             display: inline-block;
-            height: 111px;
-            width: 120px;
+            height: 134px;
+            width: 134px;
             border-left: 2px solid #1d1d1d;
            
         }
@@ -219,7 +257,7 @@ body{
         text-align: center;
         padding: 20px 0px 10px;
         button{
-            background-image: url('/assets/yellow.png');
+            background-image: url('https://i.imgur.com/GAbmVGw.png');
             @extend .bg-cover;
             @extend .bg-no-repeat;
             box-shadow: none;
@@ -283,7 +321,7 @@ body{
 
 /* related component Css*/
 .related-main{
-    background-image: url('/assets/related.svg');
+    background-image: url('https://svgshare.com/i/MSx.svg');
     background-color: $offwhite;
     @extend .bg-cover;
     @extend .bg-no-repeat;
@@ -303,7 +341,7 @@ body{
 
 /* Article component Css*/
 .article-main{
-    background-image: url('/assets/article.svg');
+    background-image: url('https://svgshare.com/i/MSw.svg');
     background-color: $offwhite;
     @extend .bg-cover;
     @extend .bg-no-repeat;
@@ -338,7 +376,7 @@ body{
 
 /*Footer*/
 footer{
-    background-image: url('/assets/footer.png');
+    background-image: url('https://svgshare.com/i/MUW.svg');
     background-color: $offwhite;
     @extend .bg-cover;
     @extend .bg-no-repeat;
@@ -364,7 +402,7 @@ footer{
             height:41px;
             width: 41px;
             margin-left: 15px;
-            background-image: url("/assets/social.png");
+            background-image: url("https://i.imgur.com/6wwiMfi.png");
             &.icon-fb{
                 background-position: 0 0
             }

@@ -16,7 +16,8 @@
   font-family: 'digitaldisplaytfb';
   font-style: normal;
   font-weight: normal;
-  src: local('digitaldisplaytfb'), url('fonts/digital_display_tfb.ttf') format('ttf');
+  src: local('digitaldisplaytfb'), url('fonts/digital_display_tfb-webfont.woff2') format('woff2'),
+        url('fonts/digital_display_tfb-webfont.woff') format('woff');
 }
 
 $myriadBold : 'Myriad Pro Bold';

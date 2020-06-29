@@ -21,7 +21,7 @@ export class Banner extends Component {
                         <div className="row">
                             <div className="offset-xl-1 col-xl-8 offset-lg-1 col-lg-8 offset-md-1 col-md-8 col-12">
                                 <div className="web-text">
-                                    <h1 className="text-60">Lorem Ipsum</h1>
+                                    <h1 className="title-track text-60">Lorem Ipsum</h1>
                                     <p className="text-35">dolor sit amet, consectetur <br/> adipiscing elit, sed do eiusmod tempor</p>
                                 </div>
                             </div>
