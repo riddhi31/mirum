@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mirum/static/css/main.57cd59a7.chunk.css",
+    "main.css": "/mirum/static/css/main.c293e38f.chunk.css",
     "main.js": "/mirum/static/js/main.7550415e.chunk.js",
     "main.js.map": "/mirum/static/js/main.7550415e.chunk.js.map",
     "runtime-main.js": "/mirum/static/js/runtime-main.84f3ee46.js",
@@ -9,10 +9,10 @@
     "static/js/2.c340a1b5.chunk.js": "/mirum/static/js/2.c340a1b5.chunk.js",
     "static/js/2.c340a1b5.chunk.js.map": "/mirum/static/js/2.c340a1b5.chunk.js.map",
     "index.html": "/mirum/index.html",
-    "precache-manifest.9c0b40e5f6015d30024cbf5a6618a5ee.js": "/mirum/precache-manifest.9c0b40e5f6015d30024cbf5a6618a5ee.js",
+    "precache-manifest.54f3aaf93c9476049f01b66ea622d1d8.js": "/mirum/precache-manifest.54f3aaf93c9476049f01b66ea622d1d8.js",
     "service-worker.js": "/mirum/service-worker.js",
     "static/css/2.391af57b.chunk.css.map": "/mirum/static/css/2.391af57b.chunk.css.map",
-    "static/css/main.57cd59a7.chunk.css.map": "/mirum/static/css/main.57cd59a7.chunk.css.map",
+    "static/css/main.c293e38f.chunk.css.map": "/mirum/static/css/main.c293e38f.chunk.css.map",
     "static/js/2.c340a1b5.chunk.js.LICENSE.txt": "/mirum/static/js/2.c340a1b5.chunk.js.LICENSE.txt",
     "static/media/styles.css": "/mirum/static/media/digital_display_tfb-webfont.b7ef013c.woff2",
     "static/media/slick-theme.css": "/mirum/static/media/slick.f97e3bbf.svg"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.84f3ee46.js",
     "static/css/2.391af57b.chunk.css",
     "static/js/2.c340a1b5.chunk.js",
-    "static/css/main.57cd59a7.chunk.css",
+    "static/css/main.c293e38f.chunk.css",
     "static/js/main.7550415e.chunk.js"
   ]
 }

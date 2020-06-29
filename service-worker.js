@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mirum/precache-manifest.9c0b40e5f6015d30024cbf5a6618a5ee.js"
+  "/mirum/precache-manifest.54f3aaf93c9476049f01b66ea622d1d8.js"
 );
 
 self.addEventListener('message', (event) => {
