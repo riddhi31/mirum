@@ -113,8 +113,8 @@ body{
     .cloud-left {
         @extend .p-absolute;
         width: 8%;
-        top: 80px;
-        left: 10%;
+        top: 60px;
+        left: 8%;
     }
     .cloud-right {
         @extend .p-absolute;
@@ -357,6 +357,7 @@ body{
         font-size: 20px;
         height: 500px;
         max-height: 500px;
+        margin-bottom: 20px;
     }
     .article-slider-main{
         &:focus,
