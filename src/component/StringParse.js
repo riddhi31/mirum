@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class StringParser2 extends Component {
+class StringParser extends Component {
 	state = {
 		isLoading: true,
 		isShortText: false,
@@ -12,6 +12,7 @@ class StringParser2 extends Component {
 	}
 	componentDidUpdate(prevProps) {
 		prevProps.content !== this.props.content && this.calculateText(this.props.content, this.props.contentLength);
+		console.log(prevProps);
 	}
 	calculateText = (content, contentLength) => {
 		if (!content || content === "") {
@@ -54,9 +55,9 @@ class StringParser2 extends Component {
 
 }
 
-StringParser2.defaultProps = {
-	charLimit: 200
+StringParser.defaultProps = {
+	charLimit: 800
 }
 
 
-export default StringParser2;
+export default StringParser;

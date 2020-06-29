@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import data from '../api/related';
-import StringParse2 from './StringParse2';
+import StringParse from './StringParse';
 import Slider from "react-slick";
 
 const articleData = data['content'];
@@ -48,7 +48,7 @@ export class Article extends Component {
                                                         <div className="mx-4 d-block">
                                                             <h2 className="text-25 mb-3 white-title">What is Lorem Ipsum?</h2>
                                                             <div className="article-content">
-                                                                <StringParse2 content={result.description} contentLength={1000} />
+                                                                <StringParse content={result.description} contentLength={1000} />
                                                             </div>
                                                         </div>
                                                     </div>
