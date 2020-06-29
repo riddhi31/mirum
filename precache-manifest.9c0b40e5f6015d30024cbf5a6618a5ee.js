@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5ee5603f1264e9a0ff26466ee743c288",
+    "revision": "f27205ffd55c4d6788cc0c2459b11ecc",
     "url": "/mirum/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mirum/static/css/2.391af57b.chunk.css"
   },
   {
-    "revision": "ec255205c93027af9427",
+    "revision": "ceadf3ae5ec1f6a6fc62",
     "url": "/mirum/static/css/main.57cd59a7.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mirum/static/js/2.c340a1b5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ec255205c93027af9427",
-    "url": "/mirum/static/js/main.67066d7e.chunk.js"
+    "revision": "ceadf3ae5ec1f6a6fc62",
+    "url": "/mirum/static/js/main.7550415e.chunk.js"
   },
   {
     "revision": "48d4f6401aecd34faae1",
