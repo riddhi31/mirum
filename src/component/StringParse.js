@@ -34,8 +34,8 @@ class StringParser extends Component {
 		if (this.state.isLoading || this.state.hasNoContent) return false;
 		if (this.state.shortContent) {
 			return (
-				<div className={""} style={{ width: '100%', wordWrap: 'break-word' }}>
-					<span className={''} dangerouslySetInnerHTML={{ __html: this.state.isShortText ? this.state.shortContent : this.props.content }}></span>
+				<div className={"read-more-outer"} style={{ width: '100%', wordWrap: 'break-word' }}>
+					<span className={'read-more-inner'} dangerouslySetInnerHTML={{ __html: this.state.isShortText ? this.state.shortContent : this.props.content }}></span>
 					{this.state.isShortText ?
 						<span className='text-20 read-txt' onClick={() => { this.setState({ isShortText: false }) }}>Read More . . .</span>
 						:
@@ -44,8 +44,8 @@ class StringParser extends Component {
 			)
 		} else {
 			return (
-				<div className={""} style={{ width: '100%', wordWrap: 'break-word' }}>
-					<span className={""} dangerouslySetInnerHTML={{ __html: this.props.content }}></span>
+				<div className={"read-more-outer"} style={{ width: '100%', wordWrap: 'break-word' }}>
+					<span className={"read-more-inner"} dangerouslySetInnerHTML={{ __html: this.props.content }}></span>
 				</div>
 			)
 		}
