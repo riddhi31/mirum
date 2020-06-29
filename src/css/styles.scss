@@ -163,7 +163,7 @@ body{
 
 /* Calculater component Css*/
 .calc-main{
-    background-image: url('https://svgshare.com/i/MSx.svg');
+    background-image: url('/assets/related.svg');
     background-color: $offwhite;
     @extend .bg-cover;
     @extend .bg-no-repeat;
@@ -171,7 +171,7 @@ body{
     @extend .p-relative;
     padding: 40px;
     .calc-bg-box{
-        background-image: url('https://svgshare.com/i/MSc.svg');
+        background-image: url('/assets/calc.svg');
         background-color: #1d1d1d;
         background-size: cover;
         @extend .bg-no-repeat;
@@ -322,7 +322,7 @@ body{
 
 /* related component Css*/
 .related-main{
-    background-image: url('https://svgshare.com/i/MSx.svg');
+    background-image: url('/assets/related.svg');
     background-color: $offwhite;
     @extend .bg-cover;
     @extend .bg-no-repeat;
@@ -342,7 +342,7 @@ body{
 
 /* Article component Css*/
 .article-main{
-    background-image: url('https://svgshare.com/i/MSw.svg');
+    background-image: url('/assets/article.svg');
     background-color: $offwhite;
     @extend .bg-cover;
     @extend .bg-no-repeat;
@@ -377,7 +377,7 @@ body{
 
 /*Footer*/
 footer{
-    background-image: url('https://svgshare.com/i/MUW.svg');
+    background-image: url('/assets/footer.svg');
     background-color: $offwhite;
     @extend .bg-cover;
     @extend .bg-no-repeat;
