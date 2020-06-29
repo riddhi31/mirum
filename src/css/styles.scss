@@ -58,7 +58,7 @@ body{
     .portrait-img{
         width: 24%;
         top: 80px;
-        right: 350px;
+        right: 270px;
         @extend .p-absolute;
         z-index: 9;
         overflow: hidden;
@@ -103,7 +103,7 @@ body{
     .thum-box{
         @extend .p-absolute;
         top: 4rem;
-        width: 100%;
+        width: 80%;
         .youtube-thumb{
             opacity: 0.5;
             width: 100%;
